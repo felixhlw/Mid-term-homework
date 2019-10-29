@@ -2776,22 +2776,21 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.wrapper > .inner {
-				width: 100%;			}
+				width: 80%;			}
 
 		}		
 
-			@media screen and (max-width: 1280px) {
+/* 			@media screen and (max-width: 1280px) {
 
 				.wrapper > .inner {
-					width: 100%;
-				}
+					width: 90%;				}
 
-			}
+			} */
 
 			@media screen and (max-width: 980px) {
 
 				.wrapper > .inner {
-					width: 100%;
+					width: 90%;
 				}
 
 			}
