@@ -3775,10 +3775,11 @@ input, select, textarea {
 /* CTA */
 
 	#cta .inner {
-		display: -moz-flex;
+/* 		display: -moz-flex;
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display: -ms-flex; */
+		display: block;
+		text-align: center;
 		max-width: 45em;
 	}
 
@@ -3787,8 +3788,8 @@ input, select, textarea {
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
-			padding-right: 3em;
-			width: 70%;
+			padding-right: 0;
+			width: 100%;
 		}
 
 			#cta .inner header p {
@@ -3799,8 +3800,11 @@ input, select, textarea {
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
+			margin-left: auto;
+			margin-right: auto;
 			order: 2;
-			width: 30%;
+			max-width: 20em;
+			width: 100%;
 		}
 
 		@media screen and (max-width: 1680px) {
