@@ -12,7 +12,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="./css/all.min.css"> <!-- fontawesome的CSS -->
-	<link href="images/favicon.ico" rel="icon" type="image/x-icon" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/fav.png" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/fav.png" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
@@ -177,9 +181,9 @@
 
 
 		.img {
-			position:relative;
-			left:-0px;
-			top:6px;
+			position: relative;
+			left: -0px;
+			top: 6px;
 
 		}
 
@@ -187,7 +191,7 @@
 
 			.img {
 
-				top:8px;	
+				top: 8px;
 			}
 
 		}
@@ -196,7 +200,7 @@
 
 			.img {
 
-				top:9px;
+				top: 9px;
 			}
 
 		}
@@ -205,9 +209,25 @@
 
 			.img {
 
-				top:11px;				
+				top: 11px;
 			}
 
+		}
+
+		.iframe-rwd {
+			position: relative;
+			padding-bottom: 50%;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+		}
+
+		.iframe-rwd iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 		}
 	</style>
 
@@ -418,16 +438,24 @@
 
 		<!-- CTA -->
 		<section id="cta" class="wrapper style4">
-			<div class="inner">
+			
+			<div class="inner"> 
 				<header>
-					<h2>Arcue ut vel commodo</h2>
-					<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+					<h2>交通地圖</h2>
+					<p>泰山職業訓練場交通位置描述：位於明志科技大學校內，由工專路進入明志校內，沿明一路/泰山職訓中心路標而上，約800公尺。</p>
 				</header>
-				<ul class="actions stacked">
-					<li><a href="#" class="button fit primary">Activate</a></li>
-					<li><a href="#" class="button fit">Learn More</a></li>
-				</ul>
+				<div class="iframe-rwd"> 
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14457.920821241634!2d121.41131965000001!3d25.051708299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1571791733185!5m2!1szh-TW!2stw"
+						width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+				<br>
+ 				<ul class="actions stacked">
+					<li><a href="#" class="button fit primary">交通方式</a></li> 
+					<li><a href="#" class="button fit">回首頁</a></li>
+				</ul>  
 			</div>
+		
 		</section>
 
 		<!-- Footer -->

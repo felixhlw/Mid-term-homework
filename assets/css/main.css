@@ -2773,11 +2773,17 @@ input, select, textarea {
 			width: 60em;
 			margin: 0 auto;
 		}
+		@media screen and (max-width: 1680px) {
+
+			.wrapper > .inner {
+				width: 100%;			}
+
+		}		
 
 			@media screen and (max-width: 1280px) {
 
 				.wrapper > .inner {
-					width: 90%;
+					width: 100%;
 				}
 
 			}
@@ -3757,6 +3763,27 @@ input, select, textarea {
 			-ms-order: 2;
 			order: 2;
 			width: 30%;
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			#cta .inner {
+				display: block;
+				text-align: center;
+			}
+
+				#cta .inner header {
+					padding-right: 0;
+					width: 100%;
+				}
+
+				#cta .inner .actions {
+					margin-left: auto;
+					margin-right: auto;
+					max-width: 20em;
+					width: 100%;
+				}
+
 		}
 
 		@media screen and (max-width: 980px) {
