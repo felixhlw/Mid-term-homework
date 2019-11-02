@@ -1757,7 +1757,7 @@ input, select, textarea {
 
 /* Section/Article */
 
-	
+
 	section.special, article.special {
 		text-align: center;
 	}
@@ -2859,6 +2859,15 @@ input, select, textarea {
 
 				.wrapper > .inner {
 					width: 90%;
+					margin-top: -20px;
+				}
+
+			}
+
+			@media screen and (max-width: 720px) {
+
+				.wrapper > .inner {
+					margin-top: -20px;
 				}
 
 			}
