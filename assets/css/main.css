@@ -2580,8 +2580,10 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			text-align: left;
+			font-weight: 800;
 			width: 50%;
 		}
+
 
 			.features li:nth-child(1) {
 				background-image: linear-gradient(rgba(80, 0, 0, 0.8), rgba(135, 21, 116, 0.603)), url("../../images/1.jpg");
@@ -2592,7 +2594,8 @@ input, select, textarea {
 
 			.features li:nth-child(2) {
 /* 				background-color: rgba(0, 0, 0, 0.07); */
-				background-image: linear-gradient(rgba(54, 2, 68, 0.8), rgba(53, 0, 128, 0.603)), url("../../images/2.jpg");
+				background-image: 
+				linear-gradient(rgba(54, 2, 68, 0.8), rgba(53, 0, 128, 0.603)), url("../../images/2.jpg");
 				background-repeat: no-repeat;
 				background-size: cover;				
 				opacity: 1.0;
@@ -2685,6 +2688,10 @@ input, select, textarea {
 						position: relative;
 						top: 0;
 					}
+					.features li p {
+						
+						padding: 10px;
+					}					
 
 			}
 
