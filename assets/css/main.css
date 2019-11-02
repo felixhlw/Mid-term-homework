@@ -23,7 +23,10 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	font-family: 'Microsoft JhengHei';
+}
+	
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2580,27 +2583,51 @@ input, select, textarea {
 		}
 
 			.features li:nth-child(1) {
-				background-color: rgba(0, 0, 0, 0.035);
+				background-image: linear-gradient(rgba(80, 0, 0, 0.8), rgba(135, 21, 116, 0.603)), url("../../images/1.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;				
+				opacity: 0.9;
 			}
 
 			.features li:nth-child(2) {
-				background-color: rgba(0, 0, 0, 0.07);
+/* 				background-color: rgba(0, 0, 0, 0.07); */
+				background-image: linear-gradient(rgba(54, 2, 68, 0.8), rgba(53, 0, 128, 0.603)), url("../../images/2.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;				
+				opacity: 1.0;
 			}
 
 			.features li:nth-child(3) {
-				background-color: rgba(0, 0, 0, 0.105);
+				/* background-color: rgba(0, 0, 0, 0.105); */
+				background-image: linear-gradient(rgba(2, 29, 149, 0.8), rgba(0, 60, 128, 0.603)), url("../../images/3.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				opacity: 1.0;				
 			}
 
 			.features li:nth-child(4) {
-				background-color: rgba(0, 0, 0, 0.14);
+				/* background-color: rgba(0, 0, 0, 0.14); */
+				background-image: linear-gradient(rgba(23, 103, 56, 0.8), rgba(45, 106, 14, 0.603)), url("../../images/4.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				opacity: 0.9;				
+		
 			}
 
 			.features li:nth-child(5) {
-				background-color: rgba(0, 0, 0, 0.175);
+				/* background-color: rgba(0, 0, 0, 0.175); */
+				background-image: linear-gradient(rgba(106, 40, 1, 0.8), rgba(128, 64, 0, 0.603)), url("../../images/5.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				opacity: 1.0;
 			}
 
 			.features li:nth-child(6) {
-				background-color: rgba(0, 0, 0, 0.21);
+				/* background-color: rgba(0, 0, 0, 0.21); */
+				background-image: linear-gradient(rgba(98, 20, 63, 0.8), rgba(97, 17, 123, 0.603)), url("../../images/6.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				opacity: 1.0;				
 			}
 
 			.features li:nth-child(7) {
@@ -2993,6 +3020,7 @@ input, select, textarea {
 
 				.wrapper.style1 .features li {
 					border-top-color: rgba(0, 0, 0, 0.125);
+			
 				}
 
 			}
