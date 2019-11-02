@@ -2586,10 +2586,10 @@ input, select, textarea {
 
 
 			.features li:nth-child(1) {
-				background-image: linear-gradient(rgba(80, 0, 0, 0.8), rgba(135, 21, 116, 0.603)), url("../../images/1.jpg");
+				background-image: linear-gradient(rgba(125, 25, 25, 0.8), rgba(176, 77, 93, 0.603)), url("../../images/1.jpg");
 				background-repeat: no-repeat;
 				background-size: cover;				
-				opacity: 0.9;
+				opacity: 1.0;
 			}
 
 			.features li:nth-child(2) {
