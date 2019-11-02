@@ -291,6 +291,40 @@
 			}
 
 		}
+		.hr1 {
+				border: 0;
+				height: 1px;
+				margin-top:50px;
+				margin-bottom: 50px;
+				background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+			}	
+		.hr2 {
+ 				border: 0; 
+				height: 1px;
+				margin-top:20px;
+				margin-bottom: 20px;
+				background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+	           	animation-name:glow ;
+    	        animation-duration: 2s;
+        	    animation-iteration-count: infinite;
+            	animation-direction: alternate;            
+        }
+        @keyframes glow {
+            0% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(75, 129, 255)) drop-shadow(0 0 3px rgb(60, 118, 255));
+            }
+            33% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(0, 255, 234)) drop-shadow(0 0 3px rgb(18, 255, 58));
+            }
+            66% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(162, 255, 31)) drop-shadow(0 0 3px rgb(180, 255, 31));
+            }
+            100% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(255, 118, 39)) drop-shadow(0 0 3px rgb(255, 111, 28));
+            }
+        }			
+
+			
 	</style>
 </head>
 
@@ -357,7 +391,8 @@
 
 			<div class="inner">
 				<header>
-					<h2>交通地圖</h2>
+						<h2 style="clear:both; border-bottom:0;padding-bottom:0px;margin-top:0px;margin-bottom:-10px">交通地圖</h2>
+						<hr class="hr2">
 					<p>泰山職業訓練場交通位置描述：位於明志科技大學校內，由工專路進入明志校內，沿明一路/泰山職訓中心路標而上，約800公尺。</p>
 				</header>
 				<div class="iframe-rwd">

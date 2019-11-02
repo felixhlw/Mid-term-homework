@@ -211,7 +211,6 @@
 
 				top: 11px;
 			}
-
 		}
 
 		.iframe-rwd {
@@ -229,6 +228,61 @@
 			width: 100%;
 			height: 100%;
 		}
+
+			/* 透明漸變<hr> - color - transparent */
+
+		.hr1 {
+			border: 0;
+			height: 1px;
+			margin-top:50px;
+			margin-bottom: 50px;
+			background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+			filter: drop-shadow(0 0 10px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(0, 170, 255)) drop-shadow(0 0 3px rgb(0, 225, 255));
+			animation-name:glow1 ;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;            
+        }
+        @keyframes glow1 {
+            0% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(75, 129, 255)) drop-shadow(0 0 3px rgb(60, 118, 255));
+            }
+            33% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(0, 255, 234)) drop-shadow(0 0 3px rgb(18, 255, 58));
+            }
+            66% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(162, 255, 31)) drop-shadow(0 0 3px rgb(180, 255, 31));
+            }
+            100% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(255, 118, 39)) drop-shadow(0 0 3px rgb(255, 111, 28));
+            }
+        }	
+		.hr2 {
+			border: 0; 
+			height: 1px;
+			margin-top:20px;
+			margin-bottom: 20px;
+			background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+			animation-name:glow2 ;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;            
+        }
+        @keyframes glow2 {
+            0% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(75, 129, 255)) drop-shadow(0 0 3px rgb(60, 118, 255));
+            }
+            33% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(0, 255, 234)) drop-shadow(0 0 3px rgb(18, 255, 58));
+            }
+            66% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(162, 255, 31)) drop-shadow(0 0 3px rgb(180, 255, 31));
+            }
+            100% {
+                filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(255, 118, 39)) drop-shadow(0 0 3px rgb(255, 111, 28));
+            }
+        }
+							
 	</style>
 
 </head>
@@ -250,7 +304,7 @@
 								<li><a href="index.html">首頁</a></li>
 								<!-- <li><a href="generic.html">Generic</a></li> -->
 								<li><a href="traffic.html" target="_blank">交通方式</a></li>
-<!-- 								<li><a href="#">Sign Up</a></li>
+								<!-- 								<li><a href="#">Sign Up</a></li>
 								<li><a href="#">Log In</a></li> -->
 							</ul>
 						</div>
@@ -279,12 +333,12 @@
 		</section>
 
 		<!-- One -->
-		<section class="wrapper style1 special"><span >&nbsp;</span>
+		<section class="wrapper style1 special"><span>&nbsp;</span>
 			<div class="inner">
-				<header   class="major">
+				<header class="major">
 					<p id="one" style="clear:both; margin-top:-10px;margin-bottom:-10px">&nbsp;</p>
-					<h2  style="clear:both; border-bottom:0;padding-bottom:0px;margin-bottom:-20px">關於泰山職業訓練場</h2>
-					<p >職業訓練的專職機構─專業技術訓練研發及推廣中心</p>
+					<h2 style="clear:both; border-bottom:0;padding-bottom:0px;margin-bottom:-20px">關於泰山職業訓練場</h2>
+					<p>職業訓練的專職機構─專業技術訓練研發及推廣中心</p>
 					<div class="video-container2">
 						<iframe
 							src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ftsvts%2Fvideos%2F1836777836335013%2F&show_text=0&width=320"
@@ -295,12 +349,35 @@
 
 					<div>前身為泰山職業訓練中心─從事職業訓練研發及推廣，
 						本場成立於民國57年4月4日，是由我國政府與聯合國合作而設立。最初的名稱是「工業職業訓練協會」，為我國最早設立的公共職業訓練機構。民國70年7月奉命改隸內政部勞動力發展署，更名為泰山職業訓練中心，並賦予職業訓練師資培訓任務，民國76年8月1日再改隸勞動部勞動力發展署，辦理多元化之中、高層之技術人才培訓，在職業訓練的發展與機制及業務推廣一直扮演著重要角色及指標地位。
-						
+
 						民國94年1月1日起奉示轉型為職業訓練研發及推廣中心，辦理全國性職業訓練研發及推廣業務，以原有40多年的「核心價值與能力」為基礎，推動新職訓模式及新職類的開發，奠定了今日職業訓練研發及推廣中心的根基。
 
 					</div>
+					<hr class="hr1">
+
+					<h2 style="clear:both; border-bottom:0;padding-bottom:0px;margin-top:0px;margin-bottom:-20px">訓練職類:
+					</h2>
+					
+					<div  class="intro">包含:
+						一、電腦輔助機械設計與製造職類
+						二、精密機械職類
+						三、電腦數值控制機械職類
+						四、銲接職類
+						五、數位影音設計與行銷職類
+						六、智動控制職類
+						七、冷凍空調職類
+						八、3D產品設計製造職類
+						九、電機設計維修職類
+						十、升降機裝修職類
+						十一、數位圖文傳播職類
+						十二、PHP資料庫網頁設計職類
+						十三、網路工程師實務應用職類
+						十四、智慧通訊職類
+						十五、物聯網應用設計職類
+						等大類的豐富訓練類別，其中部分介紹如下:
+					</div>
 				</header>
-<!-- 				<ul class="icons major">
+				<!-- 				<ul class="icons major">
 					<li><span class="icon far fa-gem major style1"><span class="label">Lorem</span></span></li>
 					<li><span class="icon far fa-heart major style2"><span class="label">Ipsum</span></span></li>
 					<li><span class="icon fas fa-code major style3"><span class="label">Dolor</span></span></li>
@@ -399,8 +476,9 @@
 		<section id="three" class="wrapper style3 special">
 			<div class="inner">
 				<header class="major">
-					<h2>專業及豐富的訓練職類</h2>
-					<p>與產業界密切關聯、無時差的多樣化訓練項目，包含各種熱門職前訓練、訓練研究發展及推廣業務、<br />台德菁英專案計畫、
+						<h2 style="clear:both; border-bottom:0;padding-bottom:0px;margin-top:0px;margin-bottom:-20px">專業及豐富的訓練職類</h2>
+						<hr class="hr2">
+						<p>與產業界密切關聯、無時差的多樣化訓練項目，包含各種熱門職前訓練、訓練研究發展及推廣業務、<br />台德菁英專案計畫、
 						辦理資訊軟體人才、新興重點發展產業科技人才等職業訓練業務。
 						<br />我們亦是訓練夥伴之合作與協助者，我們的使命及提供的服務包括：</p>
 				</header>
@@ -435,41 +513,46 @@
 
 		<!-- CTA -->
 		<section id="cta" class="wrapper style4">
-			
-			<div class="inner"> 
+
+			<div class="inner">
 				<header>
-					<h2>交通地圖</h2>
+					<h2 style="clear:both; border-bottom:0;padding-bottom:0px;margin-top:0px;margin-bottom:-10px">交通地圖</h2>
+					<hr class="hr2">
 					<p>泰山職業訓練場交通位置描述：位於明志科技大學校內，由工專路進入明志校內，沿明一路/泰山職訓中心路標而上，約800公尺。</p>
 				</header>
-				<div class="iframe-rwd"> 
+				<div class="iframe-rwd">
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14457.920821241634!2d121.41131965000001!3d25.051708299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1571791733185!5m2!1szh-TW!2stw"
 						width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 				</div>
 				<br>
- 				<ul class="actions stacked">
-					<li><a href="traffic.html" class="button fit primary" target="_blank">交通方式</a></li> 
+				<ul class="actions stacked">
+					<li><a href="traffic.html" class="button fit primary" target="_blank">交通方式</a></li>
 					<li><a href="#" class="button fit">回首頁</a></li>
-				</ul>  
+				</ul>
 			</div>
-		
+
 		</section>
 
 		<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
-				<li><a href="https://www.youtube.com/channel/UCtR9Tg2BFAIpU4126j5ljdA" target="_blank" class="icon fab fa-youtube"><span class="label">Twitter</span></a></li>
-				<li><a href="https://www.facebook.com/tsvts/" class="icon fab fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-				<li><a href="https://bit.ly/324berb" target="_blank" class="icon fab fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://www.youtube.com/channel/UCtR9Tg2BFAIpU4126j5ljdA" target="_blank"
+						class="icon fab fa-youtube"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.facebook.com/tsvts/" class="icon fab fa-facebook" target="_blank"><span
+							class="label">Facebook</span></a></li>
+				<li><a href="https://bit.ly/324berb" target="_blank" class="icon fab fa-instagram"><span
+							class="label">Instagram</span></a></li>
 				<!-- <li><a href="#" class="icon fab fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-				<li><a href="mailto:felixhlw@gmail.com" class="icon far fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="mailto:felixhlw@gmail.com" class="icon far fa-envelope"><span
+							class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
 				<li>&copy; FELIX WANG</li>
 				<li>TEMPLATE: <a href="http://html5up.net">HTML5 UP</a></li>
 				<li>地址:新北市泰山區貴子里致遠新村55之1號</li>
 				<li>電話：02-2901-8274</li>
-			<!-- </ul >
+				<!-- </ul >
 			<ul class="copyright"><li>地址:新北市泰山區貴子里致遠新村55之1號</li></ul> -->
 		</footer>
 

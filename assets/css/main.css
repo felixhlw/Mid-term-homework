@@ -75,6 +75,46 @@ input, select, textarea {
 	appearance: none;
 }
 
+.intro {
+	clear:both; 
+	border-bottom:0;
+	padding-bottom:0px;
+	margin-top:0px;
+	margin-bottom:-100px;
+}
+@media screen and (max-width: 1680px) {
+
+	.intro {
+		margin-bottom:-70px;
+	}
+
+}
+@media screen and (max-width: 1280px) {
+
+	.intro {
+		margin-bottom:-60px;
+	}
+
+}
+@media screen and (max-width: 960px) {
+
+	.intro {
+		margin-bottom:-50px;
+	}
+
+}
+
+@media screen and (max-width: 720px) {
+
+	.intro {
+		margin-bottom:-10px;
+	}
+
+}
+
+
+
+
 /* Basic */
 
 	@-ms-viewport {
