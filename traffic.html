@@ -303,25 +303,22 @@
 				height: 1px;
 				margin-top:20px;
 				margin-bottom: 20px;
- 				background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
+ 				background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); 
 	           	animation-name:glow ;
     	        animation-duration: 1s;
         	    animation-iteration-count: infinite;
 				animation-direction: alternate;            
 				/* transition: all 0.4s ease; */
-				transition: ease-in-out(0.5s);
+				transition: all 0.4s ease;
         }
         @keyframes glow {
             0% {
-				background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));				
                 filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(75, 174, 255)) drop-shadow(0 0 3px rgb(60, 174, 255));
             }
             50% {
-				background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));				
                 filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(0, 255, 115)) drop-shadow(0 0 3px rgb(18, 255, 58));
             }
             100% {
-				background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));				
                 filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(194, 255, 39)) drop-shadow(0 0 3px rgb(179, 255, 28));
             }
         }			
