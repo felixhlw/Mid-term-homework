@@ -2052,13 +2052,14 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
+		
 		position: relative;
 	}
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+			font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", "Microsoft JhengHei";
 			font-style: normal;
 			text-transform: none !important;
 		}
@@ -2073,13 +2074,15 @@ input, select, textarea {
 			-ms-transform: rotate(-45deg);
 			transform: rotate(-45deg);
 			border-radius: 3px;
-			border: solid 2px #fff;
+			border: solid 1px rgb(255, 255, 255);
+			border-color: rgb(162, 162, 162) !important;
+			/* background: #fff; */
 			display: inline-block;
-			font-size: 1.35em;
-			height: calc(3em + 2px);
-			line-height: 3em;
+			font-size: 1.0em;
+			height: calc(2em + 2px);
+			line-height: 2em;
 			text-align: center;
-			width: calc(3em + 2px);
+			width: calc(2em + 2px);
 		}
 
 			.icon.major:before {
@@ -2088,13 +2091,13 @@ input, select, textarea {
 				-ms-transform: rotate(45deg);
 				transform: rotate(45deg);
 				display: inline-block;
-				font-size: 1.5em;
+				font-size: 1.0em;
 			}
 
 			@media screen and (max-width: 736px) {
 
 				.icon.major {
-					font-size: 1em;
+					font-size: 0.8em;
 				}
 
 			}
@@ -3718,13 +3721,29 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				background: #fff;
+				background:linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 				content: '';
 				display: block;
 				height: 2px;
 				position: absolute;
 				width: 100%;
+				animation-name:glow0 ;
+				animation-duration: 1s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;  
+				transition: all 0.4s ease;	
 			}
+			@keyframes glow0 {
+				0% {
+					filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(75, 174, 255)) drop-shadow(0 0 3px rgb(60, 174, 255));
+				}
+				50% {
+					filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(0, 255, 115)) drop-shadow(0 0 3px rgb(18, 255, 58));
+				}
+				100% {
+					filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(194, 255, 39)) drop-shadow(0 0 3px rgb(179, 255, 28));
+				}
+			}			
 
 			#banner h2:before {
 				top: 0;
