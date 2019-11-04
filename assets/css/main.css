@@ -3735,13 +3735,13 @@ input, select, textarea {
 			}
 			@keyframes glow0 {
 				0% {
-					filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(75, 174, 255)) drop-shadow(0 0 3px rgb(60, 174, 255));
+					filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 3px rgb(75, 174, 255)) drop-shadow(0 0 3px rgb(60, 174, 255));
 				}
 				50% {
-					filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(0, 255, 115)) drop-shadow(0 0 3px rgb(18, 255, 58));
+					filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 3px rgb(0, 255, 115)) drop-shadow(0 0 3px rgb(18, 255, 58));
 				}
 				100% {
-					filter: drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 3px rgb(194, 255, 39)) drop-shadow(0 0 3px rgb(179, 255, 28));
+					filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 3px rgb(194, 255, 39)) drop-shadow(0 0 3px rgb(179, 255, 28));
 				}
 			}			
 
